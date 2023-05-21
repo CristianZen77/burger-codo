@@ -197,6 +197,22 @@
       </div>
       
    </div>
+    
+    <div id="carrito">
+        Escriba un producto:
+        <input type="text" v-model="nuevoProducto" @keydown.Enter="agregarProductoConIf()">
+        <button v-on:click=agregarProductoConIf()>Agregar al carrito</button>
+        <span v-show="aviso" style="color:red;">Falta producto!</span>
+        <ul>
+            <li v-for="producto in productos"> 
+                <!-- {{ producto.nombre }} - <input type="number" v-model.number="producto.cantidad"> -->
+                {{ product.nombre }} - {{ producto.cantidad }}
+                <button @click=producto.cantidad++>+</button>
+                <button @click=producto.cantidad-->-</button>
+            </li>
+        </ul>
+        <h4>Total de productos: {{sumarProductos}}</h4>
+    </div>
 
 </section>
 
