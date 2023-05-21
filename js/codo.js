@@ -41,7 +41,7 @@ Swal.fire({
 	// 	footer:	
 
 	// showConfirmButton: "true",
-	confirmButtonColor: "yellow",
+	//confirmButtonColor: "yellow",
 	// confirmButtonAriaLabel:
 
 	// showCancelButton:
