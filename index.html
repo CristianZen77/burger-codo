@@ -35,7 +35,7 @@
       <a href="#blogs">Blogs</a>
    </nav>
 
-   <a href="js/carrito.js" class="fas fa-shopping-cart icons"></a>
+   <a href="#" class="fas fa-shopping-cart icons"></a>
 
    <a href="#home" class="logo"><img src="images/logo.png" alt=""></a>
 
@@ -197,22 +197,6 @@
       </div>
       
    </div>
-    
-    <div id="carrito">
-        Escriba un producto:
-        <input type="text" v-model="nuevoProducto" @keydown.Enter="agregarProductoConIf()">
-        <button v-on:click=agregarProductoConIf()>Agregar al carrito</button>
-        <span v-show="aviso" style="color:red;">Falta producto!</span>
-        <ul>
-            <li v-for="producto in productos"> 
-                <!-- {{ producto.nombre }} - <input type="number" v-model.number="producto.cantidad"> -->
-                {{ product.nombre }} - {{ producto.cantidad }}
-                <button @click=producto.cantidad++>+</button>
-                <button @click=producto.cantidad-->-</button>
-            </li>
-        </ul>
-        <h4>Total de productos: {{sumarProductos}}</h4>
-    </div>
 
 </section>
 
@@ -444,7 +428,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="js/codo.js"></script>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-<script src="js/carrito.js"></script>    
+<script src="#"></script>    
 
     <script>
         // Esta función valida todos los campos del form.
