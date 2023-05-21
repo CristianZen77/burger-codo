@@ -54,7 +54,7 @@ Swal.fire({
 	// closeButtonAriaLabel:
 
 
-	imageUrl: "imgages/logo.png",
+	imageUrl: "images/logo.png",
 	imageWidth: "25%",
 	// imageHeight:
 	imageAlt: "codo a codo",
