@@ -17,6 +17,8 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/estilos.css">
 
+
+    <script defer src="./js/burguerz.js"></script>
 </head>
 <body>
 
@@ -100,9 +102,11 @@
       <h3>Nuestro menu</h3>
    </div>
 
-   <div class="box-container">
+   <div class="box-container" id="burgacontainer">
 
-      <div class="box" data-aos="fade-up" data-aos-delay="150">
+
+      <!-- de aqui se retira la informacion para utilizar en js y absorver la api con las hamburguesas en burguerz.js-->
+      <!-- <div class="box" data-aos="fade-up" data-aos-delay="150">
          <img src="images/product-1.png" alt="">
          <div class="content">
             <div class="stars">
@@ -196,7 +200,7 @@
             <div class="price">$29.99</div>
             <a href="#" class="btn">Comprar</a>
          </div>
-      </div>
+      </div> -->
       
    </div>
 
@@ -324,12 +328,12 @@
             
         </div>
 
-         <form action="">
-            <input data-aos="fade-up" data-aos-delay="150" type="text" placeholder="Apellido y nombre" class="box">
-            <input data-aos="fade-up" data-aos-delay="300" type="email" placeholder="Mail" class="box">
-            <input data-aos="fade-up" data-aos-delay="450" type="number" placeholder="Telefono" class="box">
-            <textarea data-aos="fade-up" data-aos-delay="600" name="" placeholder="Mensaje" class="box" id="" cols="30" rows="10"></textarea>
-            <input data-aos="fade-up" data-aos-delay="750" type="submit" value="Enviar mail" class="btn">
+         <form id="form" action="/emails/email.json">
+            <input data-aos="fade-up" data-aos-delay="150" id="nombres" type="text" placeholder="Apellido y nombre" class="box" required>
+            <input data-aos="fade-up" data-aos-delay="300" id="email" type="email" placeholder="Mail" class="box" required>
+            <input data-aos="fade-up" data-aos-delay="450" id="telefono" type="number" placeholder="Telefono" class="box">
+            <textarea data-aos="fade-up" data-aos-delay="600" id="texto" name="" placeholder="Mensaje" class="box" cols="30" rows="10"></textarea required>
+            <input data-aos="fade-up" data-aos-delay="750" id="submit" type="submit" value="Enviar mail" class="btn">
          </form>
 
       </div>
